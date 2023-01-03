@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #29af8a;
+    --second-color: #7f8b99;
+    --white: #fff;
+    --white-gray: #D0D1D2;
+    --dark: #121212;
+
+    --paragraph-font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(41, 175, 138, 0.9), rgba(127, 139, 153, 0.8)), url(/img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.primary-text {
+    color: #29af8a;
+}
+
+.secondary-text {
+    color: #7f8b99;
+}
+
+.grow-buisness {
+    background-image: url(../img/background.png);
+    background-color: var(--second-color);
+}
+section {
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+section.title-section {
+    overflow: hidden;
+}
+header nav {
+    background-color: transparent;
+    height: 15vh;
+}
+
+header nav .div-nav {
+    width: 100%;
+    height: 100%;
+}
+
+header nav .logo {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header nav .logo span {
+    font-weight: 700;
+}
+
+header nav .nav-links {
+    width: 50%;
+}
+
+header nav .nav-links li {
+    list-style: none;
+}
+
+header nav .nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+header nav .nav-links li a:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+    transform: scale(0.9);
+}
+
+header .head-content {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+
+header .head-content h1,
+header .head-content h2 {
+    font-weight: 700;
+    color: var(--white);
+}
+
+header .head-content h1 {
+    font-size: 65px;
+}
+
+header .head-content h2 {
+    font-size: 45px;
+}
+
+header .head-content p {
+    color: var(--white-gray);
+}
+
+.head-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.head-btn:hover {
+    letter-spacing: 1px;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+}
+
+
+nav .bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav .bars div {
+    width: 26px;
+    height: 3px;
+    background: var(--white);
+    margin: 2px;
+    border-radius: 2px;
+    transition: all 0.2s linear;
+}
+
+nav .bars.bars-active div:nth-child(2) {
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+nav .bars.bars-active div:nth-child(1) {
+    transform: translate(-5px, 7px) rotate(-45deg);
+}
+
+nav .bars.bars-active div:nth-child(3) {
+    transform: translate(-5px, -7px) rotate(45deg);
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--white);
+    transition: all 0.5s ease;
+    z-index: 10;
+    border-bottom: 1px solid var(--white-gray);
+}
+
+nav.sticky .div-nav .logo {
+    color: var(--primary-color);
+}
+
+nav.sticky .nav-links li a {
+    color: var(--dark);
+}
+
+nav.sticky .nav-links li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+nav.sticky .bars div {
+    background-color: var(--dark);
+}
+
+header .bottom-bar svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header .bottom-bar svg path {
+    fill: var(--white);
+}
+
+
+/* section Title */
+.section-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.section-subtitle {
+    color: var(--second-color);
+}
+
+/* section Title */
+
+
+
+/* section Testmonials */
+#Testmonials .card-body .media {
+    display: flex;
+    align-items: center;
+}
+
+#Testmonials .card-body .media img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#Testmonials .card-body .media .media-body h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#Testmonials .card-body p {
+    color: var(--second-color);
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+#Testmonials .card {
+    transition: all 0.3s ease;
+}
+
+#Testmonials .card:hover {
+    box-shadow: 0 2px 8px 1px rgba(41, 175, 138, 0.8);
+    transform: translateY(-5px);
+}
+
+/* section Testmonials */
+
+/* Slide  */
+/* .swiper {
+    width: 100%;
+    height: 100%;
+} */
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    padding: 10px 0;
+}
+
+.slide-content {
+    background-color: var(--white);
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.slide-content img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .slide-content i {
+    font-size: 70px;
+    line-height: 150px;
+    color: var(--primary-color);
+} */
+
+.pagination_ div[class^="swiper-button"]::after {
+    display: none;
+}
+
+.pagination_ .swiper-button-prev i,
+.pagination_ .swiper-button-next i {
+    font-size: 16px;
+    color: var(--dark);
+}
+
+/* Slide  */
+
+
+
+
+
+/* footer start  */
+footer {
+    background-color: #333;
+}
+
+.footer-menu-items {
+    color: #fff;
+}
+
+.footer-menu-items:hover {
+    color: #29af8a;
+}
+footer a,
+footer ul li a {
+    text-decoration: none;
+}
+footer h6 {
+    font-weight: 600;
+}
+/* footer end  */
+
+
+
+
+@media only screen and (max-width: 1208px) {
+    header nav .nav-links {
+        width: 60%;
+    }
+
+    header .head-content h1 {
+        font-size: 55px;
+    }
+
+    header .head-content h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    header .head-content h1 {
+        font-size: 45px;
+    }
+
+    header .head-content h2 {
+        font-size: 25px;
+    }
+
+    header .head-content p {
+        font-size: 14px;
+    }
+
+    header nav .logo {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    nav .nav-links {
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        background-color: var(--white);
+        width: 0%;
+        height: 85vh;
+        /* padding: 50px 10px; */
+        padding-top: 80px;
+        transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        opacity: 0;
+        text-align: center;
+        z-index: 1;
+        box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 10px 0 0 0;
+    }
+
+    nav.sticky .nav-links {
+        height: 90vh;
+        top: 10vh;
+    }
+
+    header nav .nav-links li a {
+        color: var(--primary-color);
+        opacity: 0;
+        transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+    nav .nav-links.slide {
+        width: 100%;
+        opacity: 1;
+    }
+
+    header nav .nav-links.slide li a {
+        opacity: 1;
+    }
+
+    nav .nav-links.slide li {
+        display: block;
+    }
+
+
+    section {
+        padding-top: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    #Testmonials .card-body p {
+        font-size: 14px;
+    }
+
+    .slide-content {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 421px) {
+    header .head-content h1 {
+        font-size: 35px;
+    }
+}
