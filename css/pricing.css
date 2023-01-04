@@ -41,16 +41,16 @@
 
 .price-area .inner-area .text {
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
     position: absolute;
-    top: -10px;
-    left: 17px;
+    top: -20px;
+    left: 10px;
 }
 
 .price-area .inner-area .price {
     font-size: 45px;
-    font-weight: 500;
-    margin-left: 16px;
+    font-weight: 600;
+    margin-left: 12px;
 }
 
 .table .package-name {
@@ -176,15 +176,29 @@
 .basic .package-name::before {
     content: "Starter";
 }
+.basic.for-year .package-name::before {
+    content: "Started For Year";
+    font-size: 18px;
+    text-align: center;
+}
 
 .premium .package-name::before {
     content: "Team";
     font-size: 24px;
 }
-
+.premium.for-year .package-name::before {
+    content: "Team For Year";
+    font-size: 18px;
+    text-align: center;
+}
 .ultimate .package-name::before {
     content: "Premium";
     font-size: 24px;
+}
+.ultimate.for-year .package-name::before {
+    content: "Premium For Year";
+    font-size: 18px;
+    text-align: center;
 }
 
 @media (max-width: 1020px) {
@@ -198,6 +212,7 @@
     .wrapper .table {
         width: 80%;
         margin: 0 auto;
+        margin-bottom: 40px;
     }
     .features li .list-name {
         font-size: 14px;
