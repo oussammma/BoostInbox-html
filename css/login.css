@@ -1,0 +1,40 @@
+.login-content {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.form-floating input:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(41, 175, 138, 0.3) !important;
+}
+
+.form-floating.error small {
+    font-weight: 600;
+    color: rgb(238, 72, 72);
+    padding: 2px 10px;
+}
+
+.forget-password a {
+    color: var(--second-color);
+}
+
+.forget-password a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form-switch input {
+    border-color: #BFBFBF !important;
+    box-shadow: 0 0 0 0.2rem rgba(191, 191, 191, 0.3) !important;
+}
+.form-switch input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(41, 175, 138, 0.3) !important;
+}
+
+.form-switch label {
+    font-size: 16px;
+    color: var(--second-color);
+}

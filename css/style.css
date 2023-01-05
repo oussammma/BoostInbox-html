@@ -229,7 +229,14 @@ header .bottom-bar svg path {
 .section-subtitle {
     color: var(--second-color);
 }
-
+.section-subtitle a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.section-subtitle a:hover {
+    color: var(--primary-color);
+    text-decoration: underline !important;
+}
 /* section Title */
 
 
