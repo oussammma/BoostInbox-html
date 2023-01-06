@@ -96,6 +96,11 @@ header nav .nav-links li a:hover {
     color: var(--primary-color);
     transform: scale(0.9);
 }
+header nav .nav-links li a.active {
+    background-color: var(--white);
+    color: var(--primary-color);
+    transform: scale(0.9);
+}
 header nav .nav-links li:last-child a{
     padding-right: 25px;
     padding-top: 8px;

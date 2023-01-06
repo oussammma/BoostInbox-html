@@ -1,5 +1,12 @@
 AOS.init();
-
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav-links li a').forEach(link => {
+    // const prent = link.parentElement;
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add('active');
+        console.log(activePage)
+    }
+})
 const bars = document.querySelector('.bars');
 const slide = document.querySelector('.nav-links');
 bars.addEventListener('click', () => {

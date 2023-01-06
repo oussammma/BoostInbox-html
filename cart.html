@@ -102,9 +102,9 @@
     <section class="section-cart pt-3">
         <div class="container d-block d-lg-flex align-items-start">
             <div class="cart col-lg-8 me-lg-2 mb-4 mb-lg-0">
-                <h6 class="section-title mb-1 text-start" data-aos="fade-up" data-aos-delay="300">My Cart</h6>
+                <h6 class="section-title mb-1 text-start" data-aos="fade-right" data-aos-delay="500">My Cart</h6>
                 <ul class="cart-items mt-4 p-0">
-                    <li class="d-block d-sm-flex align-items-start justify-content-between mb-5">
+                    <li class="d-block d-sm-flex align-items-start justify-content-between mb-5" data-aos="fade-right" data-aos-delay="600">
                         <div class="d-flex flex-column col-sm-3 text-center">
                             <img src="./img/no-image.png" alt="">
                             <h6 class="text-center px-2 mt-3">linkin park concert</h6>
@@ -120,7 +120,47 @@
                                         class="btn button-minus border rounded-circle  icon-shape icon-sm mx-1 lh-0"
                                         data-field="quantity">
                                     <input type="number" step="1" max="10" value="1" name="quantity"
-                                        class="quantity-field border-0 text-center w-25 ms-2" disabled>
+                                        class="quantity-field border-0 text-center w-25 ms-0 ms-md-1 ms-lg-2" disabled>
+                                    <input type="button" value="+"
+                                        class="btn button-plus border rounded-circle icon-shape icon-sm lh-0"
+                                        data-field="quantity">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-block d-sm-flex align-items-start justify-content-between mb-5" data-aos="fade-right" data-aos-delay="650">
+                        <div class="d-flex flex-column col-sm-3 text-center">
+                            <img src="./img/no-image.png" alt="">
+                            <h6 class="text-center px-2 mt-3">linkin park concert</h6>
+                        </div>
+                        <div class="d-flex flex-column col-sm-9">
+                            <div class="d-block d-md-flex align-items-center justify-content-between px-4 mb-3">
+                                <div class="d-flex flex-column col-sm-3 mb-4 mb-md-0 align-items-center">
+                                    <span class="mb-2 type">Adult</span>
+                                    <span class="price">€ 170</span>
+                                </div>
+                                <div class="col-sm-8 input-group w-auto justify-content-center justify-content-sm-end align-items-center">
+                                    <input type="button" value="-"
+                                        class="btn button-minus border rounded-circle  icon-shape icon-sm mx-1 lh-0"
+                                        data-field="quantity">
+                                    <input type="number" step="1" max="10" value="1" name="quantity"
+                                        class="quantity-field border-0 text-center w-25 ms-0 ms-md-1 ms-lg-2" disabled>
+                                    <input type="button" value="+"
+                                        class="btn button-plus border rounded-circle icon-shape icon-sm lh-0"
+                                        data-field="quantity">
+                                </div>
+                            </div>
+                            <div class="d-block d-md-flex align-items-center justify-content-between px-4 mb-3">
+                                <div class="d-flex flex-column col-sm-3 mb-4 mb-md-0 align-items-center">
+                                    <span class="mb-2 type">Adult</span>
+                                    <span class="price">€ 170</span>
+                                </div>
+                                <div class="col-sm-8 input-group w-auto justify-content-center justify-content-sm-end align-items-center">
+                                    <input type="button" value="-"
+                                        class="btn button-minus border rounded-circle  icon-shape icon-sm mx-1 lh-0"
+                                        data-field="quantity">
+                                    <input type="number" step="1" max="10" value="1" name="quantity"
+                                        class="quantity-field border-0 text-center w-25 ms-0 ms-md-1 ms-lg-2" disabled>
                                     <input type="button" value="+"
                                         class="btn button-plus border rounded-circle icon-shape icon-sm lh-0"
                                         data-field="quantity">
@@ -131,12 +171,14 @@
                 </ul>
             </div>
             <div class="cart col-lg-4 ms-lg-2">
-                <h6 class="section-title mb-1 text-start" data-aos="fade-up" data-aos-delay="300">Summary</h6>
-                <div class="cart-total d-flex align-items-center justify-content-between my-4">
+                <h6 class="section-title mb-1 text-start" data-aos="fade-left" data-aos-delay="500">Summary</h6>
+                <div class="cart-total d-flex align-items-center justify-content-between my-4" data-aos="fade-left" data-aos-delay="550">
                     <span>Total amount</span>
                     <span class="total-price">€ 810</span>
                 </div>
-                <a href="#" class="head-btn w-100 text-center">Go To Checkout</a>
+                <div data-aos="fade-left" data-aos-delay="600">
+                    <a href="#" class="head-btn w-100 text-center">Go To Checkout</a>
+                </div>
             </div>
         </div>
     </section>
